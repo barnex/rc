@@ -1,0 +1,7 @@
+RC=$HOME/rc
+sudo ln -s -v -f $RC/rc.lua /etc/xdg/awesome/ 
+sudo ln -s -v -f /usr/bin/google-chrome /usr/bin/chrome
+ln -s -v -f $RC/bashrc ~/.bashrc
+ln -s -v -f /usr/bin/google-chrome ~/bin/chrome
+ln -s -v -f $RC/vimrc ~/.vimrc
+

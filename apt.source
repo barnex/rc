@@ -1,0 +1,67 @@
+sudo apt-get remove \
+	abiword \
+	activity-log-manager \
+	aisleriot \
+	audacious \
+	brasero-common \
+	deja-dup \
+	empathy \
+	firefox \
+	flashplugin-installer \
+	galculator \
+	gedit \
+	gnome-calculator \
+	gnome-contacts \
+	gnome-font-viewer \
+	gnome-keyring \
+	gnome-mahjongg \
+	gnome-mines \
+	gnome-orca \
+	gnome-screensaver \
+	gnome-sudoku \
+	gnome-user-guide \
+	gnome-video-effects \
+	gnumeric \
+	gucharmap \
+	guvcview \
+	landscape-client-ui-install \
+	leafpad \
+	libreoffice-* \
+	lxterminal \
+	modemmanager \
+	mtpaint \
+	pidgin \
+	remmina \
+	rhythmbox \
+	seahorse \
+	shotwell \
+	simple-scan \
+	sylpheed \
+	thunderbird \
+	totem \
+	vinagre	\
+	webbrowser-app \
+	xfburn \
+	xpad \
+	yelp \
+
+
+sudo apt-get install \
+	arandr \
+	awesome \
+	awesome-extra \
+	git \
+	gnome-settings-daemon \
+	gnome-tweak-tool \
+	network-manager-gnome \
+	openssh-server \
+	vim \
+	vim-gtk \
+
+
+sudo apt-get install \
+	steam \
+	rawtherapee \
+
+sudo apt-get autoremove
+

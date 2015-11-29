@@ -461,7 +461,13 @@ function run_once(cmd)
   awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. cmd .. ")")
 end
 
-awful.util.spawn_with_shell("gnome-settings-daemon")
+function run(cmd)
+	awful.util.spawn_with_shell(cmd)
+end
+
+run("gnome-settings-daemon")
 run_once("nm-applet")
-awful.util.spawn_with_shell("setxkbmap be")
+run("setxkbmap be")
 --awful.util.spawn_with_shell("xcompmgr")
+run("$HOME/rc/screenlayout.sh")
+run("xcompmgr")

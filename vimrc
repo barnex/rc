@@ -14,6 +14,4 @@ set go-=m
 set go-=T
 set go-=r
 
-colorscheme shine
-
 set laststatus=2

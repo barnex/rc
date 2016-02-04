@@ -1,7 +1,7 @@
 shopt -s histappend
 HISTCONTROL=ignoredups
-HISTSIZE=100000
-HISTFILESIZE=200000
+HISTSIZE=1000000
+HISTFILESIZE=2000000
 shopt -s checkwinsize
 
 # make less more friendly for non-text input files, see lesspipe(1)

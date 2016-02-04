@@ -15,3 +15,4 @@ set go-=T
 set go-=r
 
 set laststatus=2
+colo delek

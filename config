@@ -157,3 +157,4 @@ bar {
 }
 
 for_window [class="Unity-control-center" instance="unity-control-center"] floating enable
+for_window [class="google-chrome"] border none

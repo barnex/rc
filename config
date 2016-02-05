@@ -1,4 +1,9 @@
 
+exec /usr/bin/setxkbmap be
+exec /usr/bin/xcompmgr -c -C -t-4 -l-4 -r4 -o.8
+exec /usr/bin/unity-settings-daemon
+exec awsetbg -t rc/i3.png 
+
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 1 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 1 -5%
 bindsym XF86AudioMute        exec --no-startup-id pactl -- set-sink-mute 1 toggle
@@ -6,12 +11,21 @@ bindsym XF86AudioMute        exec --no-startup-id pactl -- set-sink-mute 1 toggl
 bindsym XF86MonBrightnessUp   exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
-exec /usr/bin/setxkbmap be
-exec /usr/bin/xcompmgr -c -C -t-4 -l-4 -r4 -o.8
-exec /usr/bin/unity-settings-daemon
 
 set $mod Mod4
 
+set $LEFT=DP-1
+set $RIGHT=DVI-I-1
+
+workspace 2 output $LEFT
+workspace 3 output $LEFT
+workspace 4 output $LEFT
+workspace 5 output $LEFT
+
+workspace 6 output $RIGHT
+workspace 7 output $RIGHT
+workspace 8 output $RIGHT
+workspace 9 output $RIGHT
 
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # font pango:DejaVu Sans Mono 10
@@ -19,17 +33,12 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
 bindsym $mod+Return exec xterm
+bindsym $mod+q      kill
 
-# kill focused window
-bindsym $mod+q kill
+bindsym $mod+z  exec "i3lock -i $HOME/rc/i3.png -t"
 
-# start dmenu (a program launcher)
 bindsym $mod+r exec dmenu_run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
@@ -38,21 +47,28 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
+
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
 # split in horizontal orientation
 bindsym $mod+c split h
+bindsym $mod+space layout toggle split
 
 # split in vertical orientation
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen
-bindsym $mod+m fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -63,13 +79,13 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+p focus parent
 
 # focus the child container
-bindsym $mod+d focus child
+#bindsym $mod+d focus child
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -96,11 +112,16 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift+c restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+bindsym $mod+Ctrl+l resize grow width 10 px or 10 ppt
+bindsym $mod+Ctrl+k resize shrink height 10 px or 10 ppt
+bindsym $mod+Ctrl+j resize grow height 10 px or 10 ppt
+bindsym $mod+Ctrl+h resize shrink width 10 px or 10 ppt
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -131,5 +152,8 @@ mode "resize" {
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+	status_command i3status
+	position bottom
 }
+
+for_window [class="Unity-control-center" instance="unity-control-center"] floating enable

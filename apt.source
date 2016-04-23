@@ -1,16 +1,8 @@
 sudo apt-get install \
-	arandr \
-	awesome \
-	awesome-extra \
 	gdebi-core \
 	git \
-	gnome-settings-daemon \
-	gnome-tweak-tool \
-	network-manager-gnome \
-	nvidia-352 \
 	openssh-server \
 	rawtherapee \
-	steam \
 	vim \
 	vim-gtk \
 	xcompmgr \

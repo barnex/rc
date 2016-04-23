@@ -2,7 +2,8 @@
 exec /usr/bin/setxkbmap be
 exec /usr/bin/xcompmgr -c -C -t-4 -l-4 -r4 -o.8
 exec /usr/bin/unity-settings-daemon
-exec awsetbg -t rc/i3.png 
+exec /usr/bin/nm-applet
+exec feh --bg-scale rc/i3.png
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 1 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 1 -5%
@@ -158,3 +159,6 @@ bar {
 
 for_window [class="Unity-control-center" instance="unity-control-center"] floating enable
 for_window [class="google-chrome"] border none
+for_window [class="Gnome-terminal"] border pixel
+for_window [class="XTerm"] border pixel
+for_window [class="Gvim"] border pixel

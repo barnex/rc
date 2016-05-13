@@ -6,4 +6,4 @@ sudo apt-get install \
 	vim \
 	vim-gtk \
 	xcompmgr \
-
+	i3 \

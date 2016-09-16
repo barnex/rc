@@ -155,7 +155,7 @@ bar {
 	status_command i3status
 	position bottom
 	colors {
-        background #000033
+        background #000000
         statusline #ffffff
     }
 }

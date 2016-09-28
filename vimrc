@@ -19,14 +19,4 @@ set go-=r
 
 set laststatus=2
 
-
-" Vundle
-" set rtp+=~/.vim/bundle/Vundle.vim
-" call vundle#begin()
-" Plugin 'VundleVim/Vundle.vim'
-" Plugin 'Valloric/YouCompleteMe'
-" call vundle#end()
-
-filetype plugin indent on
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
+filetype plugin on

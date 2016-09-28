@@ -1,4 +1,4 @@
-PROMPT="%K{blue}%B%(5~|...|)%3~%b%F{blue} > %f%k"
+PROMPT="%K{blue}%B%(5~|...|)%4~ >%b%k "
 autoload -Uz promptinit
 promptinit
 #prompt adam1
@@ -12,6 +12,7 @@ setopt histignorealldups sharehistory
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
+
 
 autoload -Uz compinit
 compinit

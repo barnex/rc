@@ -39,3 +39,6 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 set -o vi
 alias ':q'='exit'
+
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/bin/go/bin

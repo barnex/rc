@@ -34,8 +34,11 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 
 alias ':q'='exit'
+alias ':e'='vim'
 
 
 export PATH=$PATH:$HOME/bin
-export PATH=$PATH:$HOME/bin/go/bin
+export GOPATH=$HOME
+export GOROOT=$HOME/bin/go
+export PATH=$PATH:$GOROOT/bin
 

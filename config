@@ -3,7 +3,7 @@ exec --no-startup-id /usr/bin/unity-settings-daemon
 exec --no-startup-id /usr/bin/setxkbmap be
 exec --no-startup-id /usr/bin/xcompmgr -c -C -t-4 -l-4 -r4 -o.8
 exec --no-startup-id /usr/bin/nm-applet
-exec --no-startup-id sleep 1s&& /usr/bin/feh --bg-scale /usr/share/backgrounds/warty-final-ubuntu.png
+exec --no-startup-id sleep 2s&& /usr/bin/feh --bg-scale /usr/share/backgrounds/warty-final-ubuntu.png
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5%

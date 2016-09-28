@@ -1,7 +1,0 @@
-RC=$HOME/rc
-sudo ln -s -v -f $RC/config $HOME/.i3 
-sudo ln -s -v -f /usr/bin/google-chrome /usr/bin/chrome
-ln -s -v -f $RC/bashrc ~/.bashrc
-ln -s -v -f /usr/bin/google-chrome ~/bin/chrome
-ln -s -v -f $RC/vimrc ~/.vimrc
-ln -s -v -f $RC/Xresources ~/.Xresources

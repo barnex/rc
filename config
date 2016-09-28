@@ -160,12 +160,14 @@ bar {
     }
 }
 
-for_window [class="Unity-control-center" instance="unity-control-center"] floating enable
-for_window [class="Nautilus" ] floating enable
-for_window [class="google-chrome"] border pixel
+for_window [class="Firefox"] border pixel
 for_window [class="Gnome-terminal"] border pixel
-for_window [class="XTerm"] border pixel
 for_window [class="Gvim"] border pixel
+for_window [class="Nautilus" ] floating enable
+for_window [class="Unity-control-center" instance="unity-control-center"] floating enable
+for_window [class="XTerm"] border pixel
+for_window [class="chromium-browser"] border pixel
+for_window [class="google-chrome"] border pixel
 
 # class        border   backgr   text     indic    child_border
 client.focused #000000  #ff7700  #ffffff  #ff7700  #ff7700

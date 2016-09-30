@@ -1,7 +1,13 @@
-PROMPT="%K{blue}%B%(5~|...|)%4~ >%b%k "
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+PROMPT=%K{blue}%B\$vcs_info_msg_0_%b%k
+zstyle ':vcs_info:git:*' formats '%b'
+
+PROMPT="%K{blue}%B%(5~|...|)%4~ %K{green}\$vcs_info_msg_0_%K{blue}>%b%k "
 autoload -Uz promptinit
 promptinit
-#prompt adam1
 
 
 set -o vi

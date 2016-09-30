@@ -1,9 +1,0 @@
-sudo apt-get install \
-	gdebi-core \
-	git \
-	openssh-server \
-	rawtherapee \
-	vim \
-	vim-gtk \
-	xcompmgr \
-	i3 \

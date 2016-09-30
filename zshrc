@@ -42,6 +42,8 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 alias ':q'='exit'
 alias ':e'='vim'
+alias 'ls'='ls --color=auto'
+alias 'grep'='grep --color=auto'
 
 
 export PATH=$PATH:$HOME/bin

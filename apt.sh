@@ -7,8 +7,8 @@ sudo apt install \
 	inkscape \
 	openssh-server \
 	rawtherapee \
+	steam \
 	vim \
 	vim-gnome \
 	vim-youcompleteme \
 	zsh \
-

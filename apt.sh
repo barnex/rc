@@ -1,8 +1,9 @@
 #! /bin/bash
 sudo apt install \
 	build-essential \
+	feh \
 	gimp \
-	git \	
+	git \
 	i3 \
 	inkscape \
 	openssh-server \

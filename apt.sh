@@ -1,15 +1,19 @@
 #! /bin/bash
 sudo apt install \
 	build-essential \
+	chromium-browser \
 	feh \
 	gimp \
 	git \
+	gnome-tweak-tool \
 	i3 \
 	inkscape \
 	openssh-server \
 	rawtherapee \
 	steam \
+	unity-tweak-tool \
 	vim \
+	vim-addon-manager \
 	vim-gnome \
 	vim-youcompleteme \
 	zsh \

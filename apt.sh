@@ -2,6 +2,7 @@
 sudo apt install \
 	build-essential \
 	chromium-browser \
+	clang \
 	feh \
 	gimp \
 	git \

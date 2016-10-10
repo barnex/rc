@@ -6,3 +6,6 @@ for f in config bashrc vimrc Xresources zshrc; do
 done
 
 gsettings set org.gnome.desktop.background show-desktop-icons false
+
+ln -s -v -f $RC/suspend $HOME/bin
+ln -s -v -f $RC/control $HOME/bin

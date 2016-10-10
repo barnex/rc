@@ -1,5 +1,6 @@
 #! /bin/bash
 sudo apt install \
+	astyle \
 	build-essential \
 	chromium-browser \
 	clang \
@@ -18,3 +19,5 @@ sudo apt install \
 	vim-gnome \
 	vim-youcompleteme \
 	zsh \
+
+go get -v github.com/odeke-em/drive/cmd/drive

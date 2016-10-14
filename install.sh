@@ -21,3 +21,4 @@ sudo apt install \
 	zsh \
 
 go get -v github.com/odeke-em/drive/cmd/drive
+vam install youcompleteme

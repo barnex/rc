@@ -18,6 +18,7 @@ sudo apt install \
 	vim-addon-manager \
 	vim-gnome \
 	vim-youcompleteme \
+	xbacklight \
 	zsh \
 
 go get -v github.com/odeke-em/drive/cmd/drive

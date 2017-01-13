@@ -22,4 +22,4 @@ sudo apt install \
 	zsh \
 
 go get -v github.com/odeke-em/drive/cmd/drive
-vam install youcompleteme
+git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go

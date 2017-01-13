@@ -20,3 +20,4 @@ set go-=r
 set laststatus=2
 
 filetype plugin on
+let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"

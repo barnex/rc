@@ -22,4 +22,6 @@ set laststatus=2
 filetype plugin on
 let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"
 nmap gb :GoBuild<CR>
+nmap gi :GoImports<CR>
+nmap gt :GoTest<CR>
 set clipboard=unnamed

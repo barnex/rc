@@ -24,4 +24,5 @@ let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"
 nmap gb :GoBuild<CR>
 nmap gi :GoImports<CR>
 nmap gt :GoTest<CR>
+nmap gr :GoTest -race<CR>
 set clipboard=unnamed

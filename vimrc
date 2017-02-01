@@ -26,3 +26,4 @@ nmap gi :GoImports<CR>
 nmap gt :GoTest<CR>
 nmap gr :GoTest -race<CR>
 set clipboard=unnamed
+nmap gp :e#<CR>

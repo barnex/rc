@@ -8,6 +8,8 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 alias ls='ls --color=auto'
+alias ll='ls --color=auto -l'
+alias la='ls --color=auto -la'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
@@ -20,7 +22,7 @@ fi
 export EDITOR='vim'
 set -o vi
 alias ':q'='exit'
-alias ':e'='gvim'
+alias ':e'='vim'
 alias ':make'='make'
 
 # show git branch
@@ -35,11 +37,3 @@ PS1="$GREEN$GITBRANCH $BOLD$RED\W> $RESET"
 export GOPATH=$HOME
 export GOROOT=$HOME/bin/go
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
-
-# cuda
-#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/lib:/usr/local/nvidia*/lib
-#export PATH=$PATH:/usr/local/cuda/bin
-
-#java
-export CLASSPATH=$CLASSPATH:/home/arne/src
-

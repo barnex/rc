@@ -1,52 +1,38 @@
-
 exec --no-startup-id /usr/bin/unity-settings-daemon
 exec --no-startup-id /usr/bin/setxkbmap be
 exec --no-startup-id /usr/bin/xcompmgr -c -C -t-4 -l-4 -r4 -o.8
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id sleep 2s&& /usr/bin/feh --bg-scale /home/arne/rc/bg.jpg
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 3 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 3 -5%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5%
 bindsym XF86AudioMute        exec --no-startup-id pactl -- set-sink-mute 3 toggle
 
 bindsym XF86MonBrightnessUp   exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+bindsym XF86Sleep exec sudo pm-suspend
 
 set $mod Mod4
 
-set $LEFT=DP-1
-set $RIGHT=DVI-I-1
-
-workspace 2 output $LEFT
-workspace 3 output $LEFT
-workspace 4 output $LEFT
-workspace 5 output $LEFT
-
-workspace 6 output $RIGHT
-workspace 7 output $RIGHT
-workspace 8 output $RIGHT
-workspace 9 output $RIGHT
-
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# font pango:DejaVu Sans Mono 10
+#font pango:DejaVu Sans Mono 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec roxterm
 bindsym $mod+q      kill
 
 bindsym $mod+z  exec "i3lock -i /usr/share/backgrounds/warty-final-ubuntu.png -t"
 
-bindsym $mod+r exec dmenu_run
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+r exec dmenu_run
+bindsym $mod+r exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -160,8 +146,22 @@ bar {
     }
 }
 
-new_window pixel
+#hide_edge_borders horizontal
+
+new_window pixel 3
 for_window [class="Unity-control-center" instance="unity-control-center"] floating enable
+
+popup_during_fullscreen leave_fullscreen
+
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 # class        border   backgr   text     indic    child_border
 client.focused #000000  #ff7700  #ffffff  #ff7700  #ff7700
+
+client.background       #ffffff

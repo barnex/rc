@@ -1,25 +1,30 @@
 #! /bin/bash
+
+sudo apt remove \
+	seahorse \
+	aisleriot \
+	apport \
+	apport-gtk \
+	shotwell \
+	cheese \
+	gnome-calculator \
+
+sudo apt autoremove
+
 sudo apt install \
-	astyle \
 	build-essential \
-	chromium-browser \
-	clang \
 	feh \
-	gimp \
 	git \
 	gnome-tweak-tool \
 	i3 \
-	inkscape \
+	i3lock \
 	openssh-server \
-	rawtherapee \
-	steam \
+	sshfs \
 	unity-tweak-tool \
 	vim \
-	vim-addon-manager \
-	vim-gnome \
-	vim-youcompleteme \
 	xbacklight \
-	zsh \
 
-go get -v github.com/odeke-em/drive/cmd/drive
-git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
+#go get -v github.com/odeke-em/drive/cmd/drive
+#git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
+#wget http://www.vim.org/scripts/download_script.php?src_id=21752 -O supertab.vmb
+

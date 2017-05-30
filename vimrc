@@ -20,6 +20,7 @@ set go-=r
 set laststatus=2
 
 set cursorline
+hi CursorLine ctermbg=blue cterm=none
 
 filetype plugin on
 let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"

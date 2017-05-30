@@ -24,7 +24,9 @@ sudo apt install \
 	vim \
 	xbacklight \
 
+localectl set-locale LC_TIME=en_US.UTF-8
+
+git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
 #go get -v github.com/odeke-em/drive/cmd/drive
-#git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
 #wget http://www.vim.org/scripts/download_script.php?src_id=21752 -O supertab.vmb
 

@@ -1,8 +1,13 @@
 [roxterm profile]
-hide_menubar=1
-always_show_tabs=0
-show_add_tab_btn=0
-saturation=1.000000
+font=Liberation Mono 10
+cursor_shape=0
+cursor_blink_mode=2
 scrollbar_pos=0
-maximise=0
-full_screen=0
+limit_scrollback=1
+scrollback_lines=100000
+tab_close_btn=0
+tab_pos=4
+hide_menubar=1
+show_add_tab_btn=0
+always_show_tabs=0
+scroll_on_keystroke=1

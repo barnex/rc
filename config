@@ -5,9 +5,15 @@ exec --no-startup-id /usr/bin/xcompmgr -c -C -t-4 -l-4 -r4 -o.8
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id sleep 1s&& /usr/bin/feh --bg-scale /home/arne/rc/bg.jpg
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5%
-bindsym XF86AudioMute        exec --no-startup-id pactl -- set-sink-mute 3 toggle
+## volume
+# normal keyboard
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute        exec --no-startup-id pactl -- set-sink-mute @DEFAULT_SINK@ toggle
+# microsoft sculpt
+bindsym F12 exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ +5%
+bindsym F11 exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ -5%
+bindsym F10        exec --no-startup-id pactl -- set-sink-mute @DEFAULT_SINK@ toggle
 
 bindsym XF86MonBrightnessUp   exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20

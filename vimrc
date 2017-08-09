@@ -27,7 +27,13 @@ let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"
 nmap gb :GoBuild<CR>
 nmap gi :GoImports<CR>
 nmap gt :GoTest<CR>
-nmap gc :GoTestCompile<CR>
+nmap gc :GoCoverageToggle<CR>
 nmap gr :GoTest -race<CR>
-set clipboard=unnamed
+let g:go_list_type = "quickfix"
+
 nmap gp :e#<CR>
+
+set clipboard=unnamed
+
+colo evening
+

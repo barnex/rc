@@ -37,3 +37,6 @@ PS1="$GREEN$GITBRANCH $BOLD$RED\W> $RESET"
 export GOPATH=$HOME
 export GOROOT=$HOME/bin/go
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+
+# core dumps
+ulimit -c 1000000000

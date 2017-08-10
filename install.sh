@@ -1,15 +1,5 @@
 #! /bin/bash
 
-sudo apt remove \
-	seahorse \
-	aisleriot \
-	apport \
-	apport-gtk \
-	shotwell \
-	cheese \
-	gnome-calculator \
-
-sudo apt autoremove
 
 sudo apt install \
 	build-essential \
@@ -19,14 +9,31 @@ sudo apt install \
 	i3 \
 	i3lock \
 	openssh-server \
+	roxterm \
+	xcompmgr \
 	sshfs \
 	unity-tweak-tool \
 	vim \
+	vim-gnome \
 	xbacklight \
 
 localectl set-locale LC_TIME=en_US.UTF-8
 
+sudo apt remove \
+	account-plugin-* \
+	aisleriot \
+	apport \
+	apport-gtk \
+	cheese \
+	evolution \
+	gnome-calculator \
+	seahorse \
+	shotwell \
+
+sudo apt autoremove
+
 git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
+wget http://www.vim.org/scripts/download_script.php?src_id=21752 -O supertab.vmb
+
 #go get -v github.com/odeke-em/drive/cmd/drive
-#wget http://www.vim.org/scripts/download_script.php?src_id=21752 -O supertab.vmb
 

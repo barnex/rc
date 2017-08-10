@@ -24,7 +24,7 @@ hi CursorLine ctermbg=blue cterm=none
 
 filetype plugin on
 let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"
-nmap gb :GoBuild<CR>
+nmap gb :GoInstall<CR>
 nmap gi :GoImports<CR>
 nmap gt :GoTest<CR>
 nmap gc :GoCoverageToggle<CR>

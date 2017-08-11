@@ -4,18 +4,19 @@
 sudo apt install \
 	build-essential \
 	feh \
+	gdebi \
 	git \
 	gnome-tweak-tool \
 	i3 \
 	i3lock \
 	openssh-server \
 	roxterm \
-	xcompmgr \
 	sshfs \
 	unity-tweak-tool \
 	vim \
 	vim-gnome \
 	xbacklight \
+	xcompmgr \
 
 localectl set-locale LC_TIME=en_US.UTF-8
 

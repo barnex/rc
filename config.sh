@@ -12,6 +12,7 @@ ln -s -v -f $RC/roxterm.sourceforge.net/ $HOME/.config
 gsettings set org.gnome.desktop.background show-desktop-icons false
 gsettings set org.gnome.nautilus.window-state start-with-sidebar false
 gsettings set org.gnome.nautilus.preferences always-use-location-entry true
+gsettings set org.gnome.nautilus.preferences enable-interactive-search true
 
 mkdir $HOME/bin
 mkdir $HOME/src

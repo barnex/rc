@@ -7,7 +7,7 @@ set autowrite
 set autoread
 
 set incsearch
-set spell
+set nospell
 set smartcase
 set wildmode=longest,list
 set ignorecase
@@ -20,7 +20,7 @@ set go-=r
 set laststatus=2
 
 set cursorline
-hi CursorLine ctermbg=blue cterm=none
+hi CursorLine ctermbg=black cterm=none
 
 filetype plugin on
 let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"
@@ -34,6 +34,4 @@ let g:go_list_type = "quickfix"
 nmap gp :e#<CR>
 
 set clipboard=unnamed
-
-colo evening
 

@@ -2,11 +2,15 @@
 
 
 sudo apt install \
+	automake \
 	build-essential \
+	clipit \
 	feh \
 	gdebi \
 	git \
+	gitg \
 	gnome-tweak-tool \
+	gnuplot \
 	i3 \
 	i3lock \
 	openssh-server \

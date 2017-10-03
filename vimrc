@@ -34,4 +34,5 @@ let g:go_list_type = "quickfix"
 nmap gp :e#<CR>
 
 set clipboard=unnamed
+hi Visual ctermfg=blue cterm=reverse
 

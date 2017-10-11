@@ -40,3 +40,6 @@ export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
 # core dumps
 ulimit -c 1000000000
+
+# disable caps lock
+setxkbmap -option caps:none

@@ -7,7 +7,7 @@ set autowrite
 set autoread
 
 set incsearch
-set nospell
+set spell
 set smartcase
 set wildmode=longest,list
 set ignorecase
@@ -35,4 +35,6 @@ nmap gp :e#<CR>
 
 set clipboard=unnamed
 hi Visual ctermfg=blue cterm=reverse
+hi SpellBad ctermfg=red ctermbg=none
+hi SpellCap ctermfg=red ctermbg=none
 

@@ -52,3 +52,5 @@ export GOPATH=$HOME
 export GOROOT=$HOME/bin/go
 export PATH=$PATH:$GOROOT/bin
 
+# disable caps lock
+setxkbmap -option caps:none

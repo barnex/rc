@@ -3,6 +3,7 @@ exec --no-startup-id /usr/bin/gnome-settings-daemon
 exec --no-startup-id /usr/bin/setxkbmap be
 exec --no-startup-id /usr/bin/xcompmgr -c -C -t-4 -l-4 -r4 -o.8
 exec --no-startup-id /usr/bin/nm-applet
+exec --no-startup-id /usr/bin/clipit
 exec --no-startup-id feh --bg-scale /home/arne/rc/bg.jpg
 
 ## volume

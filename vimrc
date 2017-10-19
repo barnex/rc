@@ -5,6 +5,7 @@ syntax on
 
 set autowrite
 set autoread
+set noswapfile
 
 set incsearch
 set spell
@@ -36,5 +37,5 @@ nmap gp :e#<CR>
 set clipboard=unnamed
 hi Visual ctermfg=blue cterm=reverse
 hi SpellBad ctermfg=red ctermbg=none
-hi SpellCap ctermfg=red ctermbg=none
+hi SpellCap ctermfg=none ctermbg=none
 

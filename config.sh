@@ -5,6 +5,7 @@ for f in bashrc vimrc Xresources zshrc; do
 	ln -s -v -f $RC/$f $HOME/.$f
 done
 
+mkdir $HOME/.config/i3
 ln -s -v -f $RC/config $HOME/.config/i3/config
 
 ln -s -v -f $RC/roxterm.sourceforge.net/ $HOME/.config
@@ -21,5 +22,5 @@ git config --global user.email "a.vansteenkiste@gmail.com"
 git config --global user.name "Arne Vansteenkiste"
 git config --global push.default simple
 
-mv Documents examples.desktop Pictures Templates Music Public Videos /tmp
+(cd && mv Documents examples.desktop Pictures Templates Music Public Videos /tmp)
 

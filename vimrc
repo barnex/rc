@@ -29,7 +29,7 @@ nmap gb :GoInstall<CR>
 nmap gi :GoImports<CR>
 nmap gt :GoTest<CR>
 nmap gc :GoCoverageToggle<CR>
-nmap gr :GoTest -race<CR>
+nmap gr :GoRename 
 nmap ge :GoErrCheck<CR>
 let g:go_list_type = "quickfix"
 

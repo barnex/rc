@@ -156,7 +156,7 @@ bar {
 
 #hide_edge_borders horizontal
 
-new_window pixel 3
+new_window pixel 2
 for_window [class="Unity-control-center" instance="unity-control-center"] floating enable
 
 popup_during_fullscreen leave_fullscreen

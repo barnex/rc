@@ -1,6 +1,3 @@
-set nocompatible
-filetype off
-
 syntax on
 
 set autowrite
@@ -20,31 +17,30 @@ set go-=r
 
 set laststatus=2
 
-
 filetype plugin on
 let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"
+let g:go_list_type = "quickfix"
 nmap gb :GoInstall<CR>
 nmap gi :GoImports<CR>
 nmap gt :GoTest<CR>
 nmap gc :GoCoverageToggle<CR>
 nmap gr :GoRename 
 nmap ge :GoErrCheck<CR>
-let g:go_list_type = "quickfix"
-
 nmap gp :e#<CR>
 
 set clipboard=unnamed
 
-
-let g:NERDTreeDirArrows = 0
-nmap gn :NERDTreeFind<CR>
-nmap gN :NERDTreeClose<CR>
-
 set background=light
-hi Normal         ctermbg=white ctermfg=black
+hi Normal    ctermbg=white ctermfg=black
+hi Constant  ctermfg=black cterm=bold
+hi Comment   ctermfg=8
+hi Statement ctermfg=12 cterm=bold
+hi Type      ctermfg=black cterm=bold
+hi Visual    ctermbg=14
+hi PmenuSel  cterm=bold
+
 set cursorline
 hi CursorLine ctermbg=14 cterm=none
-hi Visual ctermbg=14
-hi Constant ctermfg=8
+
 " hi SpellBad ctermfg=red ctermbg=none
 " hi SpellCap ctermfg=none ctermbg=none

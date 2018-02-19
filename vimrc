@@ -31,16 +31,19 @@ nmap gp :e#<CR>
 set clipboard=unnamed
 
 set background=light
+colo delek
 hi Normal    ctermbg=white ctermfg=black
-hi Constant  ctermfg=black cterm=bold
-hi Comment   ctermfg=8
-hi Statement ctermfg=12 cterm=bold
-hi Type      ctermfg=black cterm=bold
 hi Visual    ctermbg=14
-hi PmenuSel  cterm=bold
-
 set cursorline
-hi CursorLine ctermbg=14 cterm=none
+hi CursorLine ctermbg=7 cterm=none
+
+hi PmenuSel  cterm=bold
+" hi Constant  ctermfg=black cterm=bold
+" hi Comment   ctermfg=8
+" hi Statement ctermfg=12 cterm=bold
+hi Statement cterm=bold
+" hi Type      ctermfg=black cterm=bold
+
 
 " hi SpellBad ctermfg=red ctermbg=none
 " hi SpellCap ctermfg=none ctermbg=none

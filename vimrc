@@ -35,7 +35,8 @@ colo delek
 hi Normal    ctermbg=white ctermfg=black
 hi Visual    ctermbg=14
 set cursorline
-hi CursorLine ctermbg=7 cterm=none
+hi CursorLine ctermbg=14 cterm=none
+hi MatchParen ctermbg=red cterm=bold
 
 hi PmenuSel  cterm=bold
 " hi Constant  ctermfg=black cterm=bold

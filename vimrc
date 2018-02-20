@@ -44,6 +44,7 @@ hi PmenuSel  cterm=bold
 " hi Statement ctermfg=12 cterm=bold
 hi Statement cterm=bold
 " hi Type      ctermfg=black cterm=bold
+hi Special ctermfg=red
 
 
 " hi SpellBad ctermfg=red ctermbg=none

@@ -47,5 +47,5 @@ hi Statement cterm=bold
 hi Special ctermfg=red
 
 
-" hi SpellBad ctermfg=red ctermbg=none
-" hi SpellCap ctermfg=none ctermbg=none
+hi SpellBad ctermbg=none cterm=underline
+hi SpellCap ctermbg=none cterm=underline

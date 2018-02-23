@@ -6,6 +6,7 @@ sudo apt install \
 	build-essential \
 	clipit \
 	feh \
+	fonts-inconsolata \
 	gdebi \
 	git \
 	gitg \
@@ -39,10 +40,10 @@ sudo apt autoremove
 
 git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
 wget http://www.vim.org/scripts/download_script.php?src_id=21752 -O supertab.vmb
-wget http://www.vim.org/scripts/download_script.php?src_id=23731 -O NERD_tree.zip
-mv NERD_tree.zip ~/.vim
-(cd ~/.vim && unzip NERD_tree.zip)
 
+#wget http://www.vim.org/scripts/download_script.php?src_id=23731 -O NERD_tree.zip
+#mv NERD_tree.zip ~/.vim
+#(cd ~/.vim && unzip NERD_tree.zip)
 
 #go get -v github.com/odeke-em/drive/cmd/drive
 

@@ -154,10 +154,9 @@ bar {
     }
 }
 
-#hide_edge_borders horizontal
-
-new_window pixel 4
+new_window pixel 3
 hide_edge_borders both
+force_focus_wrapping no
 
 for_window [class="Unity-control-center" instance="unity-control-center"] floating enable
 

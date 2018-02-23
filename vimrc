@@ -49,3 +49,5 @@ hi Special ctermfg=red
 
 hi SpellBad ctermbg=none cterm=underline
 hi SpellCap ctermbg=none cterm=underline
+
+noremap Q <Nop> "disable ex mode

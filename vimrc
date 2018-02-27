@@ -31,7 +31,9 @@ autocmd FileType go nmap gp :e#<CR>
 set clipboard=unnamed
 
 set background=light
-colo delek
+colo morning
+" colo peachpuff
+" colo shine
 hi Normal    ctermbg=white ctermfg=black
 hi Visual    ctermbg=14
 set cursorline
@@ -41,10 +43,12 @@ hi MatchParen ctermbg=red cterm=bold
 hi PmenuSel  cterm=bold
 " hi Constant  ctermfg=black cterm=bold
 " hi Comment   ctermfg=8
-" hi Statement ctermfg=12 cterm=bold
-hi Statement cterm=bold
+hi Statement ctermfg=blue cterm=bold
+hi Keyword   ctermfg=blue cterm=bold
 " hi Type      ctermfg=black cterm=bold
-hi Special ctermfg=red
+" hi Special   ctermfg=red
+
+hi StatusLine ctermfg=blue
 
 hi SpellBad ctermbg=none cterm=underline
 hi SpellCap ctermbg=none cterm=underline

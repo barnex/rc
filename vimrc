@@ -11,14 +11,6 @@ set ignorecase
 set tabstop=4
 
 set clipboard=unnamed
-
-set spell
-hi SpellBad ctermbg=none cterm=underline
-hi SpellCap ctermbg=none cterm=underline
-
-set laststatus=2
-hi StatusLine ctermfg=blue
-
 noremap Q <Nop> "disable ex mode
 
 filetype plugin on
@@ -34,6 +26,14 @@ autocmd FileType go nmap gp :e#<CR>
 
 set background=light
 colo morning " peachpuff shine
+
+set spell
+hi SpellBad ctermbg=none cterm=underline
+hi SpellCap ctermbg=none cterm=underline
+
+set laststatus=2
+hi StatusLine ctermfg=blue
+
 hi Normal     ctermbg=white ctermfg=black
 hi Visual     ctermbg=14
 hi MatchParen ctermbg=red cterm=bold

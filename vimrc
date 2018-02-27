@@ -20,13 +20,13 @@ set laststatus=2
 filetype plugin on
 let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"
 let g:go_list_type = "quickfix"
-nmap gb :GoInstall<CR>
-nmap gi :GoImports<CR>
-nmap gt :GoTest<CR>
-nmap gc :GoCoverageToggle<CR>
-nmap gr :GoRename 
-nmap ge :GoErrCheck<CR>
-nmap gp :e#<CR>
+autocmd FileType go nmap gb :GoInstall<CR>
+autocmd FileType go nmap gi :GoImports<CR>
+autocmd FileType go nmap gt :GoTest<CR>
+autocmd FileType go nmap gc :GoCoverageToggle<CR>
+autocmd FileType go nmap gr :GoRename 
+autocmd FileType go nmap ge :GoErrCheck<CR>
+autocmd FileType go nmap gp :e#<CR>
 
 set clipboard=unnamed
 
@@ -45,7 +45,6 @@ hi PmenuSel  cterm=bold
 hi Statement cterm=bold
 " hi Type      ctermfg=black cterm=bold
 hi Special ctermfg=red
-
 
 hi SpellBad ctermbg=none cterm=underline
 hi SpellCap ctermbg=none cterm=underline

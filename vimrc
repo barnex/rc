@@ -1,14 +1,19 @@
+set nocompatible
 syntax on
 
 set autowrite
 set autoread
 set noswapfile
+set nobackup
 
 set incsearch
 set smartcase
 set wildmode=longest,list
 set ignorecase
+
 set tabstop=4
+set autoindent
+set copyindent
 
 set clipboard=unnamed
 noremap Q <Nop> "disable ex mode

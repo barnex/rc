@@ -8,8 +8,11 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 alias ls='ls --color=auto'
+alias ll='ls --color=auto -l'
+alias la='ls --color=auto -la'
 alias grep='grep --color=auto'
-alias term='gnome-terminal 2> /dev/null'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
@@ -26,19 +29,16 @@ alias ':make'='make'
 GITBRANCH='$(git branch 2> /dev/null | grep \* | sed "s/\* /@/g")'
 RED="\[\033[31m\]"
 GREEN="\[\033[32m\]"
+BLUE="\[\033[34m\]"
 BOLD="\[\033[1m\]"
 RESET="\[\033[0m\]"
-PS1="$GREEN$GITBRANCH $BOLD$RED\W> $RESET"
+PS1="$BOLD$BLUE\h:$GREEN$GITBRANCH$BOLD$RED \W> $RESET"
 
 # go
 export GOPATH=$HOME
 export GOROOT=$HOME/bin/go
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
-alias 'gb'='go build'
-alias 'gt'='go test'
 
 # core dumps
 ulimit -c 1000000000
 
-# disable caps lock
-setxkbmap -option caps:none

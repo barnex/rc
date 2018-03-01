@@ -12,6 +12,8 @@ set tabstop=4
 
 set clipboard=unnamed
 noremap Q <Nop> "disable ex mode
+noremap j gj
+noremap k gk
 
 filetype plugin on
 let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"

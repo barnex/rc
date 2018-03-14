@@ -20,6 +20,11 @@ noremap Q <Nop> "disable ex mode
 noremap j gj
 noremap k gk
 
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
 filetype plugin on
 let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"
 let g:go_list_type = "quickfix"

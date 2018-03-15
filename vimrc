@@ -1,31 +1,41 @@
 set nocompatible
-syntax on
 
+"I/O
 set autowrite
 set autoread
 set noswapfile
 set nobackup
 
+set clipboard=unnamed
+set mouse=a
+
+"search
 set incsearch
 set smartcase
 set wildmode=longest,list
 set ignorecase
 
+"tabs
 set tabstop=4
 set autoindent
 set copyindent
 
-set clipboard=unnamed
-noremap Q <Nop> "disable ex mode
+"disable ex mode
+noremap Q <Nop>
+
+"navigate long lines
 noremap j gj
 noremap k gk
 
+"navigate windows
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
+"go
 filetype plugin on
+syntax on
 let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"
 let g:go_list_type = "quickfix"
 autocmd FileType go nmap gb :GoInstall<CR>
@@ -36,6 +46,7 @@ autocmd FileType go nmap gr :GoRename
 autocmd FileType go nmap ge :GoErrCheck<CR>
 autocmd FileType go nmap gp :e#<CR>
 
+"colours
 set background=light
 colo morning " peachpuff shine
 

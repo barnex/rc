@@ -39,3 +39,4 @@ export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 # core dumps
 ulimit -c 100000000
 
+setxkbmap gb

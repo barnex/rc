@@ -73,3 +73,9 @@ hi CursorLine ctermbg=14 cterm=none
 
 set number
 hi LineNr ctermfg=14
+
+nnoremap . :
+nnoremap > /
+nnoremap q a
+nnoremap Q A
+nnoremap < .

@@ -54,3 +54,6 @@ export PATH=$PATH:$GOROOT/bin
 
 # disable caps lock
 setxkbmap -option caps:none
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /home/arne/bin/gocomplete go

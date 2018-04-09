@@ -40,3 +40,4 @@ export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 ulimit -c 100000000
 
 setxkbmap gb
+complete -C /home/arne/bin/gocomplete go

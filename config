@@ -1,6 +1,6 @@
 exec --no-startup-id /usr/bin/unity-settings-daemon
 exec --no-startup-id /usr/bin/gnome-settings-daemon
-exec --no-startup-id /usr/bin/setxkbmap be
+exec --no-startup-id /usr/bin/setxkbmap gb
 exec --no-startup-id /usr/bin/xcompmgr -c -C -t-4 -l-4 -r4 -o.8
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id /usr/bin/clipit

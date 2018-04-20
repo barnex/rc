@@ -19,6 +19,7 @@ fi
 export EDITOR='vim'
 set -o vi
 alias ':q'='exit'
+alias ':x'='exit'
 alias ':e'='vim'
 alias ':make'='make'
 

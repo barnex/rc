@@ -1,10 +1,11 @@
-exec --no-startup-id /usr/bin/unity-settings-daemon
-exec --no-startup-id /usr/bin/gnome-settings-daemon
+exec --no-startup-id feh --bg-scale /home/arne/rc/bg.jpg
+exec --no-startup-id compton -cGfF -o 0.6 -O 200 -I 200 -t -5 -l -5 -r 8 -D2 -m 0.88 --inactive-dim 0.1
 exec --no-startup-id /usr/bin/setxkbmap gb
-exec --no-startup-id /usr/bin/xcompmgr -c -C -t-4 -l-4 -r4 -o.8
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id /usr/bin/clipit
-exec --no-startup-id feh --bg-scale /home/arne/rc/bg.jpg
+
+gaps inner 16
+gaps outer 0
 
 ## volume
 # normal keyboard
@@ -148,14 +149,14 @@ mode "resize" {
 # finds out, if available)
 bar {
 	status_command i3status
-	position bottom
+	position top
 	colors {
         background #222222
         statusline #ffffff
     }
 }
 
-new_window pixel 3
+new_window pixel 0
 hide_edge_borders both
 force_focus_wrapping no
 
@@ -172,6 +173,6 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 # class        border   backgr   text     indic    child_border
-client.focused #000000  #aaaaaa  #ffffff  #eeeeee  #ff7700
+client.focused #000000  #aaaaaa  #ffffff  #eeeeee  #777777
 
 client.background       #ffffff

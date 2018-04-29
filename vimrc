@@ -7,7 +7,7 @@ set noswapfile
 set nobackup
 
 set clipboard=unnamed
-set mouse=a
+"set mouse=a
 
 "search
 set incsearch

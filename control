@@ -1,2 +1,0 @@
-#! /bin/bash
-unset XDG_CURRENT_DESKTOP; unity-control-center || gnome-control-center

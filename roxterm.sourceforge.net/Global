@@ -1,4 +1,0 @@
-[roxterm options]
-warn_close=0
-only_warn_running=1
-colour_scheme=GTK

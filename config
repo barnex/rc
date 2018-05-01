@@ -1,5 +1,5 @@
 exec --no-startup-id feh --bg-scale /home/arne/rc/bg.jpg
-exec --no-startup-id compton -cGfF -o 0.6 -O 200 -I 200 -t -5 -l -5 -r 8 -D2 -m 0.88 --inactive-dim 0.1 --config /home/arne/rc/compton.conf
+exec --no-startup-id compton -cCGfF -o 0.6 -O 200 -I 200 -t -4 -l -4 -r 6 -D2 -m 0.85 --inactive-dim 0.15 --config /home/arne/rc/compton.conf
 
 exec --no-startup-id xfsettingsd
 exec --no-startup-id xfce4-power-manager
@@ -9,18 +9,18 @@ exec --no-startup-id /usr/bin/setxkbmap gb
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id /usr/bin/clipit
 
-gaps inner 16
-gaps outer 0
+gaps inner 14
+gaps outer -2
 
 ## volume
 # normal keyboard
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ -5%
-bindsym XF86AudioMute        exec --no-startup-id pactl -- set-sink-mute @DEFAULT_SINK@ toggle
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ +5%
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ -5%
+#bindsym XF86AudioMute        exec --no-startup-id pactl -- set-sink-mute @DEFAULT_SINK@ toggle
 # microsoft sculpt
-#bindsym F12 exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ +5%
-#bindsym F11 exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ -5%
-#bindsym F10        exec --no-startup-id pactl -- set-sink-mute @DEFAULT_SINK@ toggle
+bindsym F12 exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ +5%
+bindsym F11 exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ -5%
+bindsym F10        exec --no-startup-id pactl -- set-sink-mute @DEFAULT_SINK@ toggle
 
 #bindsym XF86MonBrightnessUp   exec xbacklight -inc 20
 #bindsym XF86MonBrightnessDown exec xbacklight -dec 20
@@ -153,10 +153,12 @@ mode "resize" {
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	#i3bar_command i3bar -t
 	status_command i3status
 	position top
+	#mode hide
 	colors {
-        background #222222
+        background #0f819d
         statusline #ffffff
     }
 }

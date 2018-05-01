@@ -1,0 +1,5 @@
+#! /bin/bash
+
+
+
+echo "disable" > /sys/firmware/acpi/interrupts/gpe6F

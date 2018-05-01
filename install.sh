@@ -18,6 +18,7 @@ sudo apt install \
 	xfce4-power-manager \
 	xfce4-settings \
 	xfce4-volumed \
+	xtitle \
 
 localectl set-locale LC_TIME=en_US.UTF-8
 

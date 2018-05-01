@@ -30,7 +30,7 @@ GREEN="\[\033[32m\]"
 BLUE="\[\033[34m\]"
 BOLD="\[\033[1m\]"
 RESET="\[\033[0m\]"
-PS1="$BOLD$BLUE\h:$GREEN$GITBRANCH$BOLD$RED \W> $RESET"
+PS1="$(xtitle \`pwd\`)$BOLD$BLUE\h:$GREEN$GITBRANCH$BOLD$RED \W> $RESET"
 
 # go
 export GOPATH=$HOME

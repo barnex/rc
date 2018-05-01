@@ -34,7 +34,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+q      kill
 bindsym $mod+a      kill
 

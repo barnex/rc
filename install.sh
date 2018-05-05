@@ -28,4 +28,4 @@ git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
 wget http://www.vim.org/scripts/download_script.php?src_id=21752 -O supertab.vmb
 
 #go get -v github.com/odeke-em/drive/cmd/drive
-
+go get -u github.com/posener/complete/gocomplete

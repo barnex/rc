@@ -30,7 +30,7 @@ GREEN="\[\033[32m\]"
 BLUE="\[\033[34m\]"
 BOLD="\[\033[1m\]"
 RESET="\[\033[0m\]"
-PS1="$(xtitle \`pwd\`)$BOLD$BLUE\h:$GREEN$GITBRANCH$BOLD$RED \W> $RESET"
+PS1="$(xtitle \`pwd\` > /dev/null 2> /dev/null)$BOLD$BLUE\h:$GREEN$GITBRANCH$BOLD$RED \W> $RESET"
 
 # go
 export GOPATH=$HOME
@@ -41,4 +41,4 @@ export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 ulimit -c 100000000
 
 setxkbmap gb
-complete -C /home/arne/bin/gocomplete go
+#complete -C /home/arne/bin/gocomplete go

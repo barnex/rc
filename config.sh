@@ -15,6 +15,11 @@ gsettings set org.gnome.desktop.background show-desktop-icons false
 gsettings set org.gnome.nautilus.preferences always-use-location-entry true
 gsettings set org.gnome.nautilus.preferences enable-interactive-search true
 
+#firefox:
+#general.smoothScroll false
+#browser.fullscreen.autohide false
+
+
 mkdir $HOME/bin
 mkdir $HOME/src
 

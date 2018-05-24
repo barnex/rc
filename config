@@ -1,15 +1,16 @@
 exec --no-startup-id feh --bg-scale /home/arne/rc/bg.jpg
-exec --no-startup-id compton -cCGfF -o 0.6 -O 200 -I 200 -t -4 -l -4 -r 6 -D2 -m 0.85 --inactive-dim 0.15 --config /home/arne/rc/compton.conf
 
 exec --no-startup-id xfsettingsd
+
+exec --no-startup-id blueman-applet
+exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xfce4-volumed
 
-exec --no-startup-id /usr/bin/nm-applet
-exec --no-startup-id /usr/bin/clipit
+exec --no-startup-id compton -m 0.9 --inactive-dim 0.15
 
-gaps inner 14
-gaps outer -2
+#gaps inner 12
+#gaps outer -4
 
 ## volume
 # normal keyboard
@@ -34,7 +35,8 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 bindsym $mod+Return exec xfce4-terminal
-bindsym $mod+w exec firefox
+bindsym $mod+w exec /usr/lib/firefox/firefox
+bindsym $mod+e exec nautilus
 bindsym $mod+q      kill
 bindsym $mod+a      kill
 
@@ -146,19 +148,21 @@ bindsym $mod+Ctrl+h resize shrink width 10 px or 10 ppt
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	i3bar_command i3bar -t
+	#i3bar_command i3bar -t
+	i3bar_command i3bar
 	#status_command i3status
 	status_command /home/arne/bin/mi3-status
 	position bottom
 	#mode hide
 	colors {
         #background #0f819d00
-        background #00000000
+        #background #00000000
+        background #1e1e1e
         statusline #ffffff
     }
 }
 
-new_window pixel 0
+new_window pixel 1
 hide_edge_borders both
 force_focus_wrapping no
 
@@ -168,11 +172,11 @@ popup_during_fullscreen leave_fullscreen
 
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
-client.focused_inactive #222222 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #222222 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.focused          #eeeeee #eeeeee #ffffff #aaaaaa   #eeeeee
+client.focused_inactive #666666 #666666 #ffffff #666666   #666666
+client.unfocused        #444444 #444444 #888888 #444444   #444444
+client.urgent           #f44444 #f44444 #ffffff #f44444   #f44444
+client.placeholder      #0c0c0c #0c0c0c #ffffff #0c0c0c   #0c0c0c
 
 # class        border   backgr   text     indic    child_border
 client.focused #000000  #aaaaaa  #ffffff  #eeeeee  #777777

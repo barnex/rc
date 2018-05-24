@@ -63,10 +63,10 @@ hi MatchParen ctermbg=red cterm=bold
 hi PmenuSel   cterm=bold
 hi Statement  ctermfg=blue cterm=bold
 hi Keyword    ctermfg=blue cterm=bold
-" hi Constant  ctermfg=black cterm=bold
-" hi Comment   ctermfg=8
-" hi Type      ctermfg=black cterm=bold
-" hi Special   ctermfg=red
+hi Constant  ctermfg=black cterm=bold
+hi Comment   ctermfg=8
+hi Type      ctermfg=black cterm=bold
+hi Special   ctermfg=red
 
 set cursorline
 hi CursorLine ctermbg=14 cterm=none

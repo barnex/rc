@@ -14,11 +14,11 @@ sudo apt install \
 	i3 \
 	i3lock \
 	numix-icon-theme \
+	tlp \
 	vim \
 	xfce4-power-manager \
 	xfce4-settings \
 	xfce4-volumed \
-	xtitle \
 
 localectl set-locale LC_TIME=en_US.UTF-8
 

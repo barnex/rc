@@ -6,7 +6,7 @@ set autoread
 set noswapfile
 set nobackup
 
-set clipboard=unnamed
+set clipboard=unnamedplus
 "set mouse=a
 
 "search
@@ -37,7 +37,7 @@ noremap <C-l> <C-w>l
 filetype plugin on
 syntax on
 let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"
-let g:go_list_type = "quickfix"
+"let g:go_list_type = "quickfix"
 autocmd FileType go nmap gb :GoInstall<CR>
 autocmd FileType go nmap gi :GoImports<CR>
 autocmd FileType go nmap gt :GoTest<CR>
@@ -59,7 +59,7 @@ hi StatusLine ctermfg=blue
 
 hi Normal     ctermbg=white ctermfg=black
 hi Visual     ctermbg=14
-hi MatchParen ctermbg=red cterm=bold
+hi MatchParen ctermbg=12 cterm=bold
 hi PmenuSel   cterm=bold
 hi Statement  ctermfg=blue cterm=bold
 hi Keyword    ctermfg=blue cterm=bold
@@ -72,10 +72,4 @@ set cursorline
 hi CursorLine ctermbg=14 cterm=none
 
 set number
-hi LineNr ctermfg=14
-
-" nnoremap . :
-" nnoremap > /
-nnoremap q a
-nnoremap Q A
-nnoremap < .
+hi LineNr ctermfg=6

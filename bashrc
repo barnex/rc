@@ -16,7 +16,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # vim
-export EDITOR='vim'
+alias 'vim'='gvim -v'
+export EDITOR='gvim -v'
 set -o vi
 alias ':q'='exit'
 alias ':x'='exit'
@@ -34,11 +35,10 @@ PS1="$BOLD$BLUE\h:$GREEN$GITBRANCH$BOLD$RED \W> $RESET"
 
 # go
 export GOPATH=$HOME
-export GOROOT=$HOME/bin/go
-export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$GOPATH/bin
 
 # core dumps
 ulimit -c 100000000
 
-setxkbmap gb
-#complete -C /home/arne/bin/gocomplete go
+complete -C /home/arne/bin/gocomplete go

@@ -55,7 +55,9 @@ hi SpellBad ctermbg=none cterm=underline
 hi SpellCap ctermbg=none cterm=underline
 
 set laststatus=2
+set statusline+=%F
 hi StatusLine ctermfg=blue
+autocmd BufEnter * lcd %:p:h
 
 hi Normal     ctermbg=white ctermfg=black
 hi Visual     ctermbg=14
@@ -64,7 +66,7 @@ hi PmenuSel   cterm=bold
 hi Statement  ctermfg=blue cterm=bold
 hi Keyword    ctermfg=blue cterm=bold
 hi Constant  ctermfg=black cterm=bold
-hi Comment   ctermfg=8
+hi Comment   ctermfg=6
 hi Type      ctermfg=black cterm=bold
 hi Special   ctermfg=red
 

@@ -2,12 +2,14 @@ exec --no-startup-id feh --bg-scale /home/arne/rc/bg.jpg
 
 exec --no-startup-id xfsettingsd
 
-exec --no-startup-id blueman-applet
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xfce4-volumed
+exec --no-startup-id pasystray
+exec --no-startup-id blueman-applet
 
-exec --no-startup-id compton -m 0.9 --inactive-dim 0.15
+exec --no-startup-id compton -m 0.9 --inactive-dim 0.25
+exec --no-startup-id synclient TapButton3=2
 
 #gaps inner 12
 #gaps outer -4
@@ -36,7 +38,7 @@ floating_modifier $mod
 
 bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+w exec /usr/lib/firefox/firefox
-bindsym $mod+e exec nautilus
+bindsym $mod+e exec thunar
 bindsym $mod+q      kill
 bindsym $mod+a      kill
 
@@ -148,16 +150,13 @@ bindsym $mod+Ctrl+h resize shrink width 10 px or 10 ppt
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	#i3bar_command i3bar -t
 	i3bar_command i3bar
 	#status_command i3status
-	status_command /home/arne/bin/mi3-status
+	status_command /home/arne/bin/mi3-status -warn-bat=10 -warn-power=5
 	position bottom
 	#mode hide
 	colors {
-        #background #0f819d00
-        #background #00000000
-        background #1e1e1e
+        background #111111
         statusline #ffffff
     }
 }

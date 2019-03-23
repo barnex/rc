@@ -1,0 +1,32 @@
+{
+    "go.useLanguageServer": true,
+    "go.alternateTools": {
+        "go-langserver": "bingo"
+    },
+    "go.languageServerFlags": [
+        "-enhance-signature-help",
+        "-trace",
+        "-format-style=goimports",
+    ],
+    "go.languageServerExperimentalFeatures": {
+        "format": true,
+        "autoComplete": true
+    },
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "'monospace', 'fira code', monospace, 'Droid Sans Fallback'",
+    "editor.insertSpaces": false,
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.dragAndDrop": false,
+    "editor.lineNumbers": "off",
+    "editor.renderIndentGuides": false,
+    "editor.minimap.enabled": false,
+    "css.lint.argumentsInColorFunction": "ignore",
+    "go.lintOnSave": "off",
+    "editor.fontLigatures": true,
+    "workbench.activityBar.visible": false,
+    "window.menuBarVisibility": "toggle",
+    "files.autoSaveDelay": 250,
+    "workbench.statusBar.feedback.visible": false,
+    "zenMode.hideStatusBar": false,
+    "workbench.statusBar.visible": true
+}

@@ -13,7 +13,7 @@
         "autoComplete": true
     },
     "files.autoSave": "afterDelay",
-    "editor.fontFamily": "'monospace', 'fira code', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'noto', 'monospace', 'fira code', monospace, 'Droid Sans Fallback'",
     "editor.insertSpaces": false,
     "editor.copyWithSyntaxHighlighting": false,
     "editor.dragAndDrop": false,
@@ -28,5 +28,18 @@
     "files.autoSaveDelay": 250,
     "workbench.statusBar.feedback.visible": false,
     "zenMode.hideStatusBar": false,
-    "workbench.statusBar.visible": true
+    "workbench.statusBar.visible": true,
+    "go.autocompleteUnimportedPackages": true,
+    "go.coverOnTestPackage": false,
+    "go.formatTool": "goimports",
+    "workbench.colorTheme": "Visual Studio Light",
+    "vim.statusBarColorControl": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+    "vim.statusBarColors.insert": "#005f5f",
+    "editor.fontSize": 12,
+    "git.confirmSync": false
 }

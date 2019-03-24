@@ -17,7 +17,7 @@ fi
 
 # vim
 alias 'vim'='gvim -v'
-export EDITOR='gvim -v'
+export EDITOR=vim
 set -o vi
 alias ':q'='exit'
 alias ':x'='exit'

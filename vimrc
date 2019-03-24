@@ -7,7 +7,6 @@ set noswapfile
 set nobackup
 
 set clipboard=unnamedplus
-set mouse=a
 
 "search
 set incsearch
@@ -37,7 +36,7 @@ noremap <C-l> <C-w>l
 filetype plugin on
 syntax on
 let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>"
-let g:go_list_type = "quickfix"
+"let g:go_list_type = "quickfix"
 autocmd FileType go nmap gb :GoInstall<CR>
 autocmd FileType go nmap gi :GoImports<CR>
 autocmd FileType go nmap gt :GoTest<CR>
@@ -54,14 +53,13 @@ set spell
 hi SpellBad ctermbg=none cterm=underline
 hi SpellCap ctermbg=none cterm=underline
 
-set laststatus=2
-set statusline+=%F
-hi StatusLine ctermfg=blue
-autocmd BufEnter * lcd %:p:h
+"set laststatus=2
+"set statusline+=%F
+"hi StatusLine ctermfg=blue
 
 hi Normal     ctermbg=white ctermfg=black
 hi Visual     ctermbg=14
-hi MatchParen ctermbg=13 cterm=bold
+"hi MatchParen ctermbg=13 cterm=bold
 hi PmenuSel   cterm=bold
 hi Statement  ctermfg=blue cterm=bold
 hi Keyword    ctermfg=blue cterm=bold
@@ -70,11 +68,13 @@ hi Comment    ctermfg=6
 hi Type       ctermfg=black cterm=bold
 hi Special    ctermfg=red
 
-set cursorline
-hi CursorLine ctermbg=14 cterm=none
+"set cursorline
+"hi CursorLine ctermbg=14 cterm=none
 
-set number
+"set number
 hi LineNr ctermfg=6
 
-"cd on :e
-autocmd BufEnter * lcd %:p:h
+"gvim
+set go-=m
+set go-=T
+set guifont=Noto\ Mono\ 12

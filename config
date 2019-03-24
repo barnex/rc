@@ -1,4 +1,6 @@
 exec --no-startup-id feh --bg-fill /home/arne/rc/bg.png
+exec --no-startup-id /usr/bin/xmodmap /home/arne/rc/Xmodmap
+exec --no-startup-id feh --bg-scale /home/arne/rc/bg.jpg
 
 exec --no-startup-id xfsettingsd
 
@@ -38,10 +40,9 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 bindsym $mod+Return exec xfce4-terminal
-bindsym $mod+w exec /usr/lib/firefox/firefox
+bindsym $mod+w exec firefox
 bindsym $mod+e exec thunar
 bindsym $mod+q      kill
-bindsym $mod+a      kill
 
 #bindsym $mod+z  exec "i3lock -i /home/arne/rc/lock.png -t"
 

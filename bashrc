@@ -35,10 +35,10 @@ PS1="$BOLD$BLUE\h:$GREEN$GITBRANCH$BOLD$RED \W> $RESET"
 
 # go
 export GOPATH=$HOME
-export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
 
 # core dumps
 ulimit -c 100000000
 
-complete -C /home/arne/bin/gocomplete go
+setxkbmap gb

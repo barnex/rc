@@ -78,3 +78,4 @@ hi LineNr ctermfg=6
 set go-=m
 set go-=T
 set guifont=Noto\ Mono\ 12
+

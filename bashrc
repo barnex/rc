@@ -16,13 +16,12 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # vim
-alias 'vim'='gvim -v'
 export EDITOR=vim
 set -o vi
 alias ':q'='exit'
 alias ':x'='exit'
 alias ':e'='vim'
-alias ':make'='make'
+alias 'coden'='code -n'
 
 # show git branch
 GITBRANCH='$(git branch 2> /dev/null | grep \* | sed "s/\* /@/g")'
@@ -34,11 +33,9 @@ RESET="\[\033[0m\]"
 PS1="$BOLD$BLUE\h:$GREEN$GITBRANCH$BOLD$RED \W> $RESET"
 
 # go
-export GOPATH=$HOME
 export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$HOME/bin:$HOME/go/bin
 
 # core dumps
-ulimit -c 100000000
+ulimit -c 1000000
 
-complete -C /home/arne/bin/gocomplete go

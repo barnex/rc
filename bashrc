@@ -22,6 +22,10 @@ alias ':q'='exit'
 alias ':x'='exit'
 alias ':e'='vim'
 alias 'coden'='code -n'
+alias 'gt'='go test'
+alias 'gb'='go build'
+alias 'gi'='goimports -w *.go'
+alias 'gc'='git commit -a'
 
 # show git branch
 GITBRANCH='$(git branch 2> /dev/null | grep \* | sed "s/\* /@/g")'
@@ -39,3 +43,6 @@ export PATH=$PATH:$HOME/bin:$HOME/go/bin
 # core dumps
 ulimit -c 1000000
 
+godeps() {
+	 go list -f '{{ join .Deps  "\n"}}' .
+}

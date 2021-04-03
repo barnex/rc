@@ -28,11 +28,11 @@
 		"key": "ctrl+shift+p",
 		"command": "-workbench.action.showCommands"
 	},
-	{
-		"key": "ctrl+k",
-		"command": "editor.action.peekDefinition",
-		"when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-	},
+	//{
+	//	"key": "ctrl+k",
+	//	"command": "editor.action.peekDefinition",
+	//	"when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+	//},
 	{
 		"key": "ctrl+shift+f10",
 		"command": "-editor.action.peekDefinition",
@@ -83,11 +83,15 @@
 		"command": "workbench.action.openPreviousEditorFromHistory"
 	},
 	{
-		"key": "ctrl+j",
-		"command": "workbench.action.terminal.focus"
+		"key": "ctrl+enter",
+		"command": "workbench.action.terminal.toggleTerminal"
 	},
 	{
 		"key": "ctrl+t",
-		"command": "go.test.workspace"
+		"command": "go.test.package"
+	}
+	{
+		"key": "ctrl+j",
+		"command": ""
 	}
 ]
